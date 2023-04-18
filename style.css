@@ -97,19 +97,19 @@ body {
 }
 
 .card .diamonds {
-  background-image: url(suits/diamonds.png);
+  background-image: url(diamonds.png);
   color: red;
 }
 .card .hearts {
-  background-image: url(suits/hearts.png);
+  background-image: url(hearts.png);
   color: red;
 }
 .card .clubs {
-  background-image: url(suits/clubs.png);
+  background-image: url(clubs.png);
   color: black;
 }
 .card .spades {
-  background-image: url(suits/spades.png);
+  background-image: url(spades.png);
 }
 
 
