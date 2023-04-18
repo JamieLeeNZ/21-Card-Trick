@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(to right, #b7cae9, #5376aa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  
+}
+
+#instructions {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 100px;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+.row-select {
+  margin: 57.5px 50px;
+  height: 50px;
+  width: 90px;
+  border-radius: 10px;
+  border: solid 1px #473e3e;
+  box-shadow: 0 0 10px #473e3e;
+  cursor: pointer;
+}
+
+.row-select:hover {
+  background-color: #f8f2e7;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(-1px);
+}
+
+#deck {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.card {
+    border: solid 1px #aaa;
+    border-radius: 9px;
+    width: 100px;
+    height: 150px;
+    float:left;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 10px #817878;
+}
+
+
+
+.card .value {
+    font-size:15pt;
+    font-family: sans-serif;
+}
+
+.card .suit {
+	height: 140px;
+  width: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.card .diamonds {
+  background-image: url(suits/diamonds.png);
+  color: red;
+}
+.card .hearts {
+  background-image: url(suits/hearts.png);
+  color: red;
+}
+.card .clubs {
+  background-image: url(suits/clubs.png);
+  color: black;
+}
+.card .spades {
+  background-image: url(suits/spades.png);
+}
+
+
+.reveal-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#reveal-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button {
+  margin-top: 30px;
+  width: 60%;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 1px #473e3e;
+  box-shadow: 0 0 10px #473e3e;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f8f2e7;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(-1px);
+}
+
