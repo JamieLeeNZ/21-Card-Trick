@@ -1,0 +1,28 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Magic Trick</title>
+    <link rel="stylesheet" href="magic-style.css">
+    <script src="magic-script.js" defer></script>
+  </head>
+  <body>
+    <div class="deck" id="board">
+      <p id="instructions"></p>
+      <div class="container">
+        <div class="interface"> 
+          <button class="row-select row1" value="1">Row 1</button>
+          <button class="row-select row2" value="2">Row 2</button>
+          <button class="row-select row3" value="3">Row 3</button>
+        </div>
+        <div id="deck"></div>
+      </div>
+    </div>
+    <br />
+    <div id="reveal">
+      <div class="reveal-display"><h2 id="reveal-text"></h2></div>
+      <div class="reveal-display"id="reveal-card"></div>
+      <div class="reveal-display"><button class="button restart-button">Restart</button></div>
+    </div>
+</body>
+</html>
