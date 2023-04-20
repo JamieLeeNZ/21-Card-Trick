@@ -35,10 +35,6 @@ body {
   flex-direction: row;
 }
 
-
-
-
-
 .row-select {
   margin: 57.5px 50px;
   height: 50px;
@@ -71,30 +67,28 @@ body {
 }
 
 .card {
-    border: solid 1px #aaa;
-    border-radius: 9px;
-    width: 100px;
-    height: 150px;
-    float:left;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 0 0 10px #817878;
+  border: solid 1px #aaa;
+  border-radius: 9px;
+  width: 100px;
+  height: 150px;
+  float:left;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 10px #817878;
 }
-
-
 
 .card .value {
-    font-size:15pt;
-    font-family: sans-serif;
+  font-size:15pt;
+  font-family: sans-serif;
 }
-
 .card .suit {
 	height: 140px;
   width: 100px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 
 .card .diamonds {
   background-image: url(diamonds.png);
@@ -143,3 +137,102 @@ body {
   transform: translateY(-1px);
 }
 
+@media (max-width: 1440px) or (max-height: 900px) {
+
+  .button {
+    margin-top: 20px;
+    width: 50%;
+    height: 45px;
+    border-radius: 9px;
+  }
+  .row-select {
+    margin: 42.5px 40px;
+    height: 50px;
+    width: 90px;
+  }
+  
+  .card {
+    width: 80px;
+    height: 120px;
+  }
+  .card .value {
+    font-size: 12pt;
+  }
+  .card .suit {
+    height: 110px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 1024px) or (max-height: 768px){
+
+  .button {
+    margin-top: 15px;
+    width: 40%;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .interface {
+    margin-top:10px;
+  }
+  .row-select {
+    margin: 35px 30px;
+    height: 40px;
+    width: 72px;
+  }
+  .card {
+    width: 60px;
+    height: 90px;
+  }
+  .card .value {
+    font-size: 10pt;
+  }
+  .card .suit {
+    height: 80px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 720px){
+  #instructions {
+    font-size: 18px;
+  }
+  .interface {
+    margin-top:5px;
+  }
+  .row-select {
+    margin: 25px 10px;
+    height: 30px;
+    width: 60px;
+    font-size:12px;
+  }
+  .card {
+    width: 40px;
+    height: 60px;
+  }
+  .card .value {
+    font-size: 10pt;
+  }
+  .card .suit {
+    height: 60px;
+    width: 40px;
+  }
+
+  .reveal-display .card {
+    width: 60px;
+    height: 90px;
+  }
+  .reveal-display .card .value {
+    font-size: 10pt;
+  }
+  .reveal-display .card .suit {
+    height: 80px;
+    width: 60px;
+  }
+}
+
+@media (max-height: 600px) {
+  #instructions {
+    margin: 50px;
+  }
+}
